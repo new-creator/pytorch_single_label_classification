@@ -37,6 +37,9 @@ def main():
     #                                transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])}
 
     data_root = os.path.dirname(__file__)  # get data root path
+    # 数据集路径在网盘
+    # 链接：https://pan.baidu.com/s/1esAx1XdnRh9vRoFfzSS2uw
+    # 提取码：oxc5
     image_path = os.path.join(data_root, "data_set", "flower_data")  # flower data set path
     assert os.path.exists(image_path), "{} path does not exist.".format(image_path)
     train_dataset = datasets.ImageFolder(root=os.path.join(image_path, "train"),
